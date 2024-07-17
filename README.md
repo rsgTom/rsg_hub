@@ -157,7 +157,7 @@ Happy coding! 🎉
 1. **Clone the repository**:
 
    ```sh
-   git clone <[https://github.com/rsgTom/rsg_hub.git>
+   git clone <https://github.com/rsgTom/rsg_hub.git>
    cd rsg_hub
    ```
 

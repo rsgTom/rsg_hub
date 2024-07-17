@@ -1,6 +1,6 @@
 # RSG Hub 🚀
 
-RSG Hub is a comprehensive platform for extracting and displaying blog post data using a backend written in Python and a frontend built with React Native. The backend processes and serves the blog post data, while the React Native app displays the posts in an interactive and user-friendly manner.
+RSG Hub is a comprehensive platform for extracting and displaying blog post data using a backend written in Python and a frontend built with React Native. The backend processes and serves the blog post data, while the React Native app displays the posts in an interactive and user-friendly manner. This is a work in progress, and this README is aspirational. To run the program, run main.py. There is no complete front end, but the backend logic is functional.
 
 ## Project Structure 📁
 
@@ -66,7 +66,7 @@ rsg_hub/
 3. **Run the Python extraction script**:
 
     ```sh
-    python src/resolute_extractor.py
+    python main.py
     ```
 
 4. **Start the Flask server**:

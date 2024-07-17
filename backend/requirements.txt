@@ -1,0 +1,14 @@
+pandas
+beautifulsoup4
+nltk
+keybert
+transformers
+tqdm
+spacy
+selenium
+aiohttp
+webdriver-manager
+python-dotenv
+langchain
+flask
+axios

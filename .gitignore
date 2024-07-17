@@ -1,0 +1,13 @@
+.env
+logs/*
+*.log
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.swp
+*~
+.DS_Store
+Thumbs.db
+*.json

@@ -41,9 +41,6 @@ rsg_hub/
 ├── README.md
 ├── setup.py
 
-markdown
-Copy code
-
 ## Prerequisites 📋
 
 - Docker

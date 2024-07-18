@@ -6,12 +6,12 @@ retry:
 # File Storage Paths
 data_paths:
   directories:
-    - "./data/raw/"
-    - "./data/clean/"
+    - "./backend/data/raw/"
+    - "./backend/data/clean/"
   files:
     json: 
-      - "./data/raw/blog_posts.json"
-      - "./data/clean/cleaned_blog_posts.json"
+      - "./backend/data/raw/blog_posts.json"
+      - "./backend/data/clean/cleaned_blog_posts.json"
 
 # API settings
 rsg:

@@ -10,7 +10,8 @@ import tqdm
 import logging
 import yaml
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../'))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
@@ -332,7 +333,7 @@ def process_json_file(filepath):
             with open(output_filepath, 'r') as file:
                 existing_data = json.load(file)
                 if existing_data:
-                    previous_end = max(record.get("date") for record in existing_data)
+                    previous_end = max(record.get("metadata", {}).get("date") for record in existing_data)
         except (FileNotFoundError, json.JSONDecodeError) as e:
             logger.error(f"Error reading existing output file: {e}")
     

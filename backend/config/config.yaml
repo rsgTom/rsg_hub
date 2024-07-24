@@ -18,6 +18,10 @@ rsg:
   brief_url: "https://resolutestrategy.com/the-brief"
   scrape_url: "https://resolutestrategy.com"
 
+s2:
+  base_urls:
+  - "https://api.semanticscholar.org/graph/v1/"
+
 # Logging settings
 logging:
   level: "INFO"
@@ -27,7 +31,6 @@ logging:
     - "./logs/blog.log"
     - "./logs/resolute_cleaner.log"
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-
 
 # Fetch settings
 fetch:

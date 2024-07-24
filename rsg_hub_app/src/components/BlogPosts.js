@@ -11,7 +11,7 @@ const BlogPosts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://<your-server-ip>:5000/data/blog_posts');
+        const response = await axios.get('http://127.0.0.1:5000/data/blog_posts');
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data: ", error);

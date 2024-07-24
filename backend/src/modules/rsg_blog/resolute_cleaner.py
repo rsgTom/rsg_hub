@@ -21,7 +21,7 @@ from functools import partial
 import numpy as np
 
 # CONFIG, LOGGING, ENVIRONMENT SETUP
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')) # may need to refactor this endpoint
 if project_root not in sys.path:
     sys.path.append(project_root)
 

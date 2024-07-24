@@ -1,7 +1,7 @@
-import backend.src.resolute_cleaner as cleaner
-import backend.src.resolute_scraper as scraper
-import backend.src.resolute_extractor as extractor
-import backend.src.normalizer as normalizer
+import backend.src.modules.rsg_blog.resolute_cleaner as cleaner
+import backend.src.modules.rsg_blog.resolute_scraper as scraper
+import backend.src.modules.rsg_blog.resolute_extractor as extractor
+import backend.src.modules.rsg_blog.normalizer as normalizer
 import asyncio
 
 async def main():

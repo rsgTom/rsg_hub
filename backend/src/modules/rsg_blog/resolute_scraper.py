@@ -27,7 +27,7 @@ tracemalloc.start()
 
 ## CONFIG, LOGGING, ENVIRONMENT SETUP
 # Dynamically determine the project root directory and add it to the Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')) # May need to add more ../ to get to the root
 if project_root not in sys.path:
     sys.path.append(project_root)
 

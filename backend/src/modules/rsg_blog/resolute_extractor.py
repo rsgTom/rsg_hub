@@ -326,14 +326,14 @@ def process_json_file(filepath):
     extracted_data = []
 
     # Determine the last processed date if the output file already exists
-    output_filepath = filepath.replace("blog_posts.json", "blog_posts_extracted.json")
+    output_filepath = filepath.replace("./backend/data/raw/blog_posts.json", "./backend/data/raw/blog_posts_extracted.json")
     previous_end = None
     if os.path.exists(output_filepath):
         try:
             with open(output_filepath, 'r') as file:
                 existing_data = json.load(file)
                 if existing_data:
-                    previous_end = max(record.get("metadata", {}).get("date") for record in existing_data)
+                    previous_end = max(record.get("Metadata", {}).get("date") for record in existing_data)
         except (FileNotFoundError, json.JSONDecodeError) as e:
             logger.error(f"Error reading existing output file: {e}")
     
@@ -381,8 +381,8 @@ def save_to_json(df, output_filepath):
 
 
 def main():
-    filepath = "backend/data/raw/blog_posts.json"
-    output_filepath = "backend/data/raw/blog_posts_extracted.json"
+    filepath = "./backend/data/raw/blog_posts.json"
+    output_filepath = "./backend/data/raw/blog_posts_extracted.json"
     df = process_json_file(filepath)
     if not df.empty:
         save_to_json(df, output_filepath)
